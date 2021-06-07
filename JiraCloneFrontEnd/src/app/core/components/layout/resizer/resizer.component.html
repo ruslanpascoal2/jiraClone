@@ -1,1 +1,5 @@
-<p>resizer works!</p>
+<div class="resizer text-gray-500 hover:text-white h-screen"  (click)="manualToggle.emit()">
+    <button class="resizer-button focus:outline-none  focus:outline-none">
+        <fa-icon style="font-size: 12px;" [icon]="expanded ? faChevronLeft : faChevronRight"></fa-icon>
+    </button>
+</div>

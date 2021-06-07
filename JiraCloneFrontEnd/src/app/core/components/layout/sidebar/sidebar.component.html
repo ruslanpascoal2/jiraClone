@@ -1,1 +1,29 @@
-<p>sidebar works!</p>
+
+<div class="sidebar bg-sidebarBackground h-screen w-sidebar px-4 py-10 flex flex-col" [ngClass]="{ 'w-sidebarCollapsed': !expanded}" >
+  <ng-container  *ngIf="!hideContent">
+ 
+  <section class="heading flex pl-2 align-items-center" >
+    <div class="company-logo  mr-5">
+      <img
+        style="height: 40px"
+        src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Android_O_Preview_Logo.png/900px-Android_O_Preview_Logo.png"
+      />
+    </div>
+    <div class="flex flex-col">
+      <h5 class="font-medium">Apfel Tech</h5>
+      <small>Software Project</small>
+    </div>
+  </section>
+  <section class="menus pt-8">
+    <ul>
+      <li class="menu-item" *ngFor="let menuItem of menuItems" [routerLink]="menuItem.route" routerLinkActive="active">
+       <div class="menu-item-icon mr-5 w-4">
+           <fa-icon class="w-full" [icon]="menuItem.icon"></fa-icon>
+       </div>
+       <span class=""> {{ menuItem.displayName }}</span>
+      </li>
+    </ul>
+  </section>
+     
+</ng-container>
+</div>

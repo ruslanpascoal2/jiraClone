@@ -17,10 +17,12 @@ module.exports = {
         colors:{
           'primary': "#0747a6",
           'primarylight':"#0e57c4",
+          'sidebarBackground': "#fafafa"
         },
         spacing: {
           'navbar': '64px',
-          'sidebar': '240px'
+          'sidebar': '240px',
+          'sidebarCollapsed': '20px'
         }
       },
     },

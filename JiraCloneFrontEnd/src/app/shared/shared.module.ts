@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { RouterModule } from '@angular/router';
 
 
 
@@ -8,10 +9,12 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
   declarations: [],
   imports: [
     CommonModule,
-    FontAwesomeModule
+    FontAwesomeModule,
+    RouterModule
   ],
   exports: [
-    FontAwesomeModule
+    FontAwesomeModule,
+    RouterModule
   ]
 })
 export class SharedModule { }

@@ -1,0 +1,27 @@
+.menu-item{
+    height: 40px;
+    display: flex;
+    align-items: center;
+    transition: .3s all;
+    padding: 4px 1rem;
+    cursor: pointer;
+    color: #353535;
+    font-weight: 400;
+    border-radius: 6px;
+    &:hover{
+        background-color: #ebecf0;
+    }
+    &.active{
+        color: #0e57c4;
+        background-color: #ebecf0;
+    }
+}
+.sidebar{
+    transition: width 300ms cubic-bezier(0.2, 0, 0, 1) 0s;
+
+}
+
+.w-sidebarCollapsed{
+    padding-left: 0;
+    padding-right: 0;
+}

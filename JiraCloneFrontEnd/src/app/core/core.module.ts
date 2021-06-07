@@ -4,6 +4,7 @@ import { NavbarComponent } from './components/layout/navbar/navbar.component';
 import { SidebarComponent } from './components/layout/sidebar/sidebar.component';
 import { ResizerComponent } from './components/layout/resizer/resizer.component';
 import { SharedModule } from '../shared/shared.module';
+import { NavigationComponent } from './components/layout/navigation/navigation.component';
 
 
 
@@ -11,7 +12,8 @@ import { SharedModule } from '../shared/shared.module';
   declarations: [
     NavbarComponent,
     SidebarComponent,
-    ResizerComponent
+    ResizerComponent,
+    NavigationComponent
   ],
   imports: [
     CommonModule,
@@ -20,7 +22,9 @@ import { SharedModule } from '../shared/shared.module';
   exports: [
     NavbarComponent,
     SidebarComponent,
-    ResizerComponent
+    ResizerComponent,
+    NavigationComponent
+
   ],
 })
 export class CoreModule { }

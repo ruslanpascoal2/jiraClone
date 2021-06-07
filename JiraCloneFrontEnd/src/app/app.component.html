@@ -1,7 +1,9 @@
-<div class="navigation flex bg-">
-  <div class="flex flex-row overflow-hidden h-full">
-    <app-navbar></app-navbar>
-    <app-sidebar [expanded]="expanded"></app-sidebar>
-  </div>
-  <app-resizer (click)="toggle()" [expanded]="expanded"></app-resizer>
+<div class="flex h-screen w-screen">
+  <app-navigation
+  [expanded]="expanded"
+  (manualToggle)="manualToggle()"
+></app-navigation>
+<div id="content">
+  <router-outlet></router-outlet>
+</div>
 </div>
